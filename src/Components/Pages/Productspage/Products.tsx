@@ -47,11 +47,13 @@
 // export default Products;
 
 import React, { useEffect, useState } from 'react';
-import './Products.css'
-import Header from '../../Header/Header';
-import Footer from '../../Footer/Footer';
-import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+
+import { addItem } from '../../../Store/cartSlice';
+import './Products.css'
+
 
 
 type ApiResponse = {
@@ -67,6 +69,7 @@ type ApiResponse = {
 
 const ProductList = () => {
     const navigate = useNavigate();
+    const dispatch = useDispatch();
     const [products, setProducts] = useState<ApiResponse[] | null>(null);
 
     useEffect(() => {
@@ -77,12 +80,8 @@ const ProductList = () => {
                       })
     }, []);
 
-    const addToCart = (productId: number) => {
-        // fetch("http://localhost/api.php", {
-        //     method: "POST",
-        //     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        //     body: `action=addToCart&product_id=${productId}`
-        // });
+    const addToCart = (product: ApiResponse) => {
+        dispatch(addItem({ image: product.image, id: product.id , title: product.title, price: product.price, quantity: 1 }));
         navigate('/Cartpage');
 
     };
@@ -90,9 +89,6 @@ const ProductList = () => {
 
     return (
         <div>
-            {/* <div className = 'headerDiv'>
-             <Header/>
-            </div> */}
             <div className = 'mainContent'>
                 {
                     products ?
@@ -106,7 +102,7 @@ const ProductList = () => {
                                 <p className = 'priceStyle'>{`Price: $${product.price}`}</p>
                                 <p className = 'catogeryStyle'>{ `Catogery: ${product.catogery}`}</p>
                                 <p className='descriptionStyle'>{`About: ${product.description}`}</p>
-                                <button onClick={() =>{addToCart(product.id)}} className = 'buttonStyle'>Add to Cart</button>
+                                <button onClick={() =>{addToCart(product)}} className = 'buttonStyle'>Add to Cart</button>
                             </div>
                         </div>
                     ))}
@@ -116,10 +112,6 @@ const ProductList = () => {
                 }
 
             </div>
-            
-            {/* <div>
-                <Footer/>
-            </div> */}
         </div>
     );
 };

@@ -1,13 +1,19 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './Header.css'
 import { useNavigate } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { useSelector } from 'react-redux';
+
+import { RootState } from '../../Store/Store';
+
+import './Header.css'
+
 
 
 const Header = () => {
 
     const navigate = useNavigate();
+    const { items } = useSelector((state: RootState) => state.cart);
+
 
     const pageChangeHandler = (page: string) =>
     {
@@ -30,7 +36,7 @@ const Header = () => {
             <div className = 'hstack gap-5 '>
                 <button className = 'buttonStyles' onClick = {() => pageChangeHandler('Homepage')}>Home</button>
                 <button className = 'buttonStyles' onClick = {() => pageChangeHandler('Productpage')}>Products</button>
-                <button className = 'buttonStyles' onClick = {() => pageChangeHandler('Cartpage')}>Cart (0)</button>
+                <button className = 'buttonStyles' onClick = {() => pageChangeHandler('Cartpage')}>Cart ({items.length})</button>
                 <button className = 'buttonStyles' onClick = {() => pageChangeHandler('Contactpage')}>Contact US</button>
             </div>
 

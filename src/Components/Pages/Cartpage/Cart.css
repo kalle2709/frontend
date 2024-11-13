@@ -27,3 +27,40 @@
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+.cart {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .cartItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width:50rem;
+    
+  }
+
+  .removeStyle{
+    background-color: pink;
+    font-family: cursive;
+  }
+
+  .checkoutButton{
+    margin-top: 2rem;
+    padding: 0.2rem;
+    background-color: pink;
+  }
+
+  .cardCounter::-webkit-outer-spin-button,
+  .cardCounter::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cardCounter {
+  -moz-appearance: textfield;
+}

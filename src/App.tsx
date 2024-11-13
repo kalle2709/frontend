@@ -9,6 +9,8 @@ import Cart from './Components/Pages/Cartpage/Cart';
 import Contact from './Components/Pages/ContactPage/Contact';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
+import store from './Store/Store';
+import { Provider } from 'react-redux';
 
 function App() {
   const location = useLocation();
@@ -32,8 +34,11 @@ function App() {
 
 export default function AppWrapper() {
   return (
-    <Router>
-      <App />
+    <Provider store={store}>
+      <Router>
+        <App />
     </Router>
+    </Provider>
+    
   );
 }

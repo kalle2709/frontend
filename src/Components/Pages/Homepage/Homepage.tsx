@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import Header from '../../Header/Header'
-import './Home.css'
-import Footer from '../../Footer/Footer'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import img1 from '../../../images/img1.jpg';
 import img2 from '../../../images/img2.jpeg';
 import img3 from '../../../images/img3.jpg';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -40,17 +38,8 @@ const Homepage = () => {
   
   return (
     <div>
-        {/* <div className = 'headerDiv'>
-             <Header/>
-        </div> */}
         <div style={animationStyle} className = 'imagepart'>        
-
-        </div>
-        
-        {/* <div>
-          <Footer/>
-        </div> */}
-      
+        </div>      
     </div>
   )
 }

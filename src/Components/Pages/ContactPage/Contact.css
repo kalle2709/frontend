@@ -1,0 +1,54 @@
+.mainContainer{
+    padding-top: 10rem;
+    background-color: black;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputContainer{
+    justify-content: center;
+    align-items: baseline;
+}
+
+.labelStyle{
+    font-family: cursive;
+    color: white;
+    margin-bottom: 0rem;
+
+}
+
+.inputStyle{
+    width: 20rem;
+    color: white;
+    background-color: transparent;
+    border:none;
+    border-bottom: 2px solid white;
+
+}
+
+.inputStyle:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+  }
+
+.submitStyle{
+    width: 27rem;
+    padding: 0.5rem;
+    border: 2px solid pink;
+    background-color: pink;
+    font-family: cursive
+}
+
+.modalHeader{
+    font-family: cursive;
+    font-size: 1.5rem;
+
+}
+
+.modalText{
+    font-family: cursive;
+}

@@ -1,0 +1,53 @@
+.headerDiv {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    background-color: white; 
+    padding: 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+
+.headerStack{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
+
+.logo{
+    font-family: cursive;
+    color:pink;
+    font-size: 1.5rem;
+}
+
+.title{
+    font-family: cursive;
+    color:pink;
+    font-size: 2rem;
+    padding-left: 7rem;
+
+}
+
+.menuStack{
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonStyles{
+    border: none;
+    background-color: pink;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-family: cursive;
+
+}
+
+.avatar{
+    border-radius: 50%;
+    background-color: pink;
+    padding: 0.8rem;
+    cursor: default;
+    font-family: cursive;
+}

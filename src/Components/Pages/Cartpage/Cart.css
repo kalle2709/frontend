@@ -1,0 +1,29 @@
+.mainContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh; 
+    padding-top: 0; 
+}
+
+.headerStyle{
+    font-family: cursive;
+    font-size: 2rem;
+
+}
+
+.subtextStyle{
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+.buttonStyle{
+    font-family: cursive;
+    background-color: pink;
+    color: black;
+    border: 2px solid pink;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

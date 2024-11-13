@@ -1,0 +1,55 @@
+.mainDiv{
+    background-color: pink;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer{
+    background-color: whitesmoke;
+    height: 25rem;
+    width: 25rem;
+
+}
+
+.itemsStack{
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    padding-top: 4rem;
+
+}
+
+.headerText{
+    width: 20rem;
+    font-family: cursive;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.nameStyle{
+    width: 20rem;
+    background-color: transparent;
+    color: black;
+    border: none;
+    border-bottom: 2px solid black;
+    font-family: cursive;
+    margin-bottom: 1rem;
+}
+
+.nameStyle:focus {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid black;
+  }
+
+  .loginbuttonStyle{
+    font-family: cursive;
+    padding: 0.3rem;
+    color: black;
+    background-color: pink;
+    width: 20rem;
+
+  }

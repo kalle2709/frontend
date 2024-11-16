@@ -82,16 +82,12 @@ cURL in PHP to fetch data from an external API
 ![image](https://github.com/user-attachments/assets/18fc3e22-d32e-4e84-8c82-d7c621e880e4)
 
 **Confirmation Alert**
+![image](https://github.com/user-attachments/assets/0f3093e3-75af-4c2b-990d-9f3dd6f2f43b)
 
-![image](https://github.com/user-attachments/assets/46c29190-aed7-460c-8ba2-6f78c259be48)
 
 **Contact Page**
 
 ![image](https://github.com/user-attachments/assets/ad3f4be7-aecd-4cf4-b290-5bc31caea6f9)
-
-
-**Response Confirmation**
-![image](https://github.com/user-attachments/assets/efd6c75d-b7d3-4031-8e33-d0c7915a3a40)
 
 
 

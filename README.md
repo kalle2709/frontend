@@ -66,14 +66,16 @@ cURL in PHP to fetch data from an external API
 
 **Products Page**
 
-![image](https://github.com/user-attachments/assets/cdbb27c9-6e47-4888-bd5e-9d7aa6e955d2)
+![image](https://github.com/user-attachments/assets/01d0103c-c8ab-4c19-b297-eada90ab8e76)
+
 
 **Shopping cart with no items**
 ![image](https://github.com/user-attachments/assets/b6784b18-6e4e-41d0-a3e4-ceef804b207e)
 
 **Cart with items**
 
-![image](https://github.com/user-attachments/assets/dc066cc8-9a4c-4b6d-8141-c645b263f4aa)
+![image](https://github.com/user-attachments/assets/b5a679f6-3494-4cb6-98f4-a9ec90af3d2a)
+
 
 **Proceed Action**
 
@@ -85,7 +87,8 @@ cURL in PHP to fetch data from an external API
 
 **Contact Page**
 
-![image](https://github.com/user-attachments/assets/6bd0d65c-d018-43a1-822c-eca2f6a588e6)
+![image](https://github.com/user-attachments/assets/ad3f4be7-aecd-4cf4-b290-5bc31caea6f9)
+
 
 **Response Confirmation**
 ![image](https://github.com/user-attachments/assets/efd6c75d-b7d3-4031-8e33-d0c7915a3a40)

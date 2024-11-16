@@ -1,46 +1,101 @@
-# Getting Started with Create React App
+**Project Name**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple e-commerce application with a basic login system, product display, shopping cart, and contact form. The app uses PHP for API handling and React for the front-end to display the UI and manage user interactions.
 
-## Available Scripts
+**Table of Contents**
 
-In the project directory, you can run:
+1.Installation
+2.Features
+3.Technologies Used
+4.Usage
 
-### `npm start`
+**Installation**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Prerequisites**
+To run this application, make sure you have the following installed:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. PHP (for running the backend server)
+2. Node.js and npm (for running the React frontend)
+3. A browser to access the app
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Steps to run the application**
 
-### `npm run build`
+1. Clone the repository:
+   git clone <repository-url>
+2. Navigate to the frontend directory and install the necessary dependencies:
+   cd frontend
+   npm install
+3. Start the PHP server:
+   php -S localhost:8000
+4. Start the React app:
+   npm start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   This will start the React app on http://localhost:3000, which will communicate with the PHP backend at    http://localhost:8000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Features**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Login Page**: Accepts any user data (username and password) with no validation. The login button is initially disabled and becomes enabled once both fields are populated.
+2. **Home Page**: After login, the user is redirected to the home page, which contains a navigation menu with options for Home, Products, Shopping Cart, and Contact. It also displays the Avatar and a Logout button on top.
+3. **Products Page**: Displays product data fetched from the PHP backend, which pulls data from an external API. Products include details such as title, price, category, description, and image. Each product has an Add to Cart button that navigates to the cart page.
+4. **Cart Page**: Shows the products added to the cart. Users can increase or decrease the quantity of items, and the total price updates accordingly. Multiple items can be added. There is a Process button that opens a modal for card details input.
+5. P**ayment Success**: After entering card details, an alert appears confirming payment success, and the user is navigated back to the home page.
+6. **Contact Page:** Accepts user input for name, email, and message. Upon form submission, a modal appears confirming that the response has been received.
 
-### `npm run eject`
+**Technologies Used**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Frontend:**
+React for building the user interface
+Bootstrap for styling
+Redux for state management (for cart functionality)
+React Router for navigation between pages
+**Backend:**
+PHP for handling API calls and serving data to the frontend
+cURL in PHP to fetch data from an external API
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Images:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+**Login page**
 
-## Learn More
+![image](https://github.com/user-attachments/assets/c59fdea6-3e2f-419b-b034-719b66b21e3a)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Home Page**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/user-attachments/assets/6a874bfa-d27a-4288-8e68-8fbbd08ecbce)
+
+**Products Page**
+
+![image](https://github.com/user-attachments/assets/cdbb27c9-6e47-4888-bd5e-9d7aa6e955d2)
+
+**Shopping cart with no items**
+![image](https://github.com/user-attachments/assets/b6784b18-6e4e-41d0-a3e4-ceef804b207e)
+
+**Cart with items**
+
+![image](https://github.com/user-attachments/assets/dc066cc8-9a4c-4b6d-8141-c645b263f4aa)
+
+**Proceed Action**
+
+![image](https://github.com/user-attachments/assets/18fc3e22-d32e-4e84-8c82-d7c621e880e4)
+
+**Confirmation Alert**
+
+![image](https://github.com/user-attachments/assets/46c29190-aed7-460c-8ba2-6f78c259be48)
+
+**Contact Page**
+
+![image](https://github.com/user-attachments/assets/6bd0d65c-d018-43a1-822c-eca2f6a588e6)
+
+**Response Confirmation**
+![image](https://github.com/user-attachments/assets/efd6c75d-b7d3-4031-8e33-d0c7915a3a40)
+
+
+
+
+
+
+
+
+
+

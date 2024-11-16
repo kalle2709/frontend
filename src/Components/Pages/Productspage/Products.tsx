@@ -1,50 +1,4 @@
-// import React, { useEffect, useState } from "react";
 
-// type ApiResponse = {
-//   message: string;
-//   status: string;
-// };
-// type ApiResponse = {
-//      id: number,
-//      title :string ,
-//      image:any,
-//      price: number,
-//      catogery: string,
-//      description: any
-    
-//     };
-
-// const Products: React.FC = () => {
-//   const [data, setData] = useState<ApiResponse | null>(null);
-
-//   useEffect(() => {
-//     // Fetch data from the PHP API
-//     // fetch("http://localhost:8080/apitry.php")
-//     fetch("https://fakestoreapi.com/products")
-//       .then((response) => response.json())
-//       .then((data: ApiResponse) => {
-//         setData(data);
-//       })
-//       .catch((error) => console.error("Error fetching data:", error));
-//   }, []);
-//   console.log(data)
-
-//   return (
-//     <div>
-//       <h1>Product Page</h1>
-//       {data ? (
-//         <div>
-//           <p>{data.message}</p>
-//           <p>Status: {data.status}</p>
-//         </div>
-//       ) : (
-//         <p>Loading...</p>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Products;
 
 import React, { useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -73,7 +27,7 @@ const ProductList = () => {
     const [products, setProducts] = useState<ApiResponse[] | null>(null);
 
     useEffect(() => {
-        fetch("https://fakestoreapi.com/products")
+        fetch('http://localhost:8000/index.php')
             .then(response => response.json())
             .then((data: ApiResponse[]) => {
                         setProducts(data);
@@ -85,7 +39,6 @@ const ProductList = () => {
         navigate('/Cartpage');
 
     };
-    console.log(products)
 
     return (
         <div>

@@ -1,4 +1,4 @@
-**Project Name**
+**E-Cart**
 
 This is a simple e-commerce application with a basic login system, product display, shopping cart, and contact form. The app uses PHP for API handling and React for the front-end to display the UI and manage user interactions.
 
@@ -88,6 +88,9 @@ cURL in PHP to fetch data from an external API
 **Contact Page**
 
 ![image](https://github.com/user-attachments/assets/ad3f4be7-aecd-4cf4-b290-5bc31caea6f9)
+
+
+
 
 
 
